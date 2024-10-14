@@ -1,5 +1,5 @@
 import React from 'react';
-import card from "../assets/100.mov"
+import card from "../assets/1.mp4"
 import rocket from '../assets/rocket.svg';
 
 export default function About() {
@@ -11,8 +11,8 @@ export default function About() {
         </h2>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="flex-[.5] order-1 md:order-1">
-            <div className=" w-[70%] mx-auto rounded-lg p-6 text-center">
-            <video src={card}  autoPlay loop  muted  className='h-[500px] w-[300px] '></video>
+            <div className=" md:w-[80%] mx-auto rounded-lg p-6 text-center">
+            <video src={card}  autoPlay loop  muted  className='w-full'></video>
              
             </div>
           </div>

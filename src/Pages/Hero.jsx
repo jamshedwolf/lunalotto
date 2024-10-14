@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaArrowUp } from 'react-icons/fa'; // FontAwesome icon
 import circle from "../assets/circle1.svg"
-import card from "../assets/100.mov"
+import card from "../assets/1.mp4"
 import wave from "../assets/vave.svg";
 
 export default function Hero() {
@@ -14,7 +14,7 @@ export default function Hero() {
           {/* Card - Top on mobile, Right on large screens */}
           <div className="w-full lg:w-1/3 order-1   flex items-center justify-center lg:order-2 flex-[.4]"> {/* Applied flex-[.5] */}
             <div className=" rounded-lg overflow-hidden  ">
-           <video src={card}  autoPlay loop  muted  className='h-[500px]  w-[300px] '></video>
+           <video src={card}  autoPlay loop  muted  className=' '></video>
         
        
        
