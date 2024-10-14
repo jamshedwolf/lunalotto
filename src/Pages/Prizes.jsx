@@ -19,7 +19,7 @@ export default function Prizes() {
   return (
     <div className=" text-white relative py-16 px-4 sm:px-6 lg:px-8">
          <div className="gradient z-[-1] right-[-30%] hidden md:block  absolute top-0 w-[500px] rounded-full blur-[220px] h-[500px]"></div>
-         <div className="gradient z-[-1] left-[20%]  absolute bottom-60 w-[500px] rounded-full blur-[220px] h-[500px]"></div>
+         <div className="gradient z-[-1] left-[20%]  absolute bottom-60 w-[300px] rounded-full blur-[120px] h-[300px]"></div>
       <div className="max-w-7xl mx-auto ">
         <h2 className="text-4xl  md:text-6xl text-center font-bold mb-2">
           LUNA <span className="text-[#d3a605]  ">PRIZES</span>
