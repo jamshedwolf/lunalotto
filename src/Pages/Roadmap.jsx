@@ -62,7 +62,7 @@ export default function Roadmap() {
       </h1>
       <div className="grid grid-cols-1 lg:w-[70%] md:grid-cols-2 lg:grid-cols-3 gap-6">
         {phases.map((phase, index) => (
-          <div key={index} className="bg-white/5 p-6 rounded-[20px] shadow-md border border-gray-700">
+          <div key={index} className="bg-white/5 p-6 transform hover:scale-110 transition-transform duration-300 rounded-[20px] shadow-md border border-gray-700">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-[#D3A605] font-bold">
                 PHASE 0{index + 1}
@@ -89,7 +89,7 @@ export default function Roadmap() {
         <p className="text-center text-gray-500">POWERED BY AMAZING INVESTORS:</p>
         <div className="flex flex-wrap justify-center items-center mt-10">
           {logos.map((logo, index) => (
-            <img key={index} src={logo} alt={`logo-${index}`} className=" h-16 lg:h-[100px] mx-2" />
+            <img key={index} src={logo} alt={`logo-${index}`} className=" h-16 lg:h-[100px] transform hover:scale-110 delay-100 transition-transform duration-300 mx-2" />
           ))}
         </div>
       </div>

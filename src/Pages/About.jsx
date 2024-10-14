@@ -1,5 +1,5 @@
 import React from 'react';
-import card from "../assets/100.mp4"
+import card from "../assets/100.mov"
 import rocket from '../assets/rocket.svg';
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
              
             </div>
           </div>
-          <div className="flex-[.5]  order-2 flex flex-col gap-5 md:order-2">
+          <div className="flex-[.5]  md:mt-[80px] order-2 flex flex-col gap-5 md:order-2">
             <h3 className="   text-center md:text-start text-4xl  md:text-6xl  font-bold mb-4">
               CREATE YOUR <br/><span className="text-[#d3a605]">OWN</span> NFT
             </h3>

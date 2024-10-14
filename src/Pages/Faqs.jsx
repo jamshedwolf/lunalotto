@@ -1,9 +1,13 @@
-"use client"
+
 
 import { useState } from 'react'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa' 
 import wave from "../assets/vave.svg";
 import rocket from "../assets/rocket.svg";
+import bitcoin from "../assets/bitcoin.svg";
+import eth from "../assets/eth.svg";
+import cross from "../assets/cross.svg";
+import circle1 from "../assets/circle2.svg";
 
 const faqs = [
   {
@@ -58,9 +62,9 @@ function Faqs() {
                 >
                   <span className=" text-white">{faq.question}</span>
                   {openItem === index ? (
-                    <FaChevronUp className="w-3 h-3 text-[#e7e9e5] transform hover:scale-110 transition-transform duration-300" />
+                    <FaChevronUp className="w-3 h-3 text-[#e7e9e5] transform hover:scale-150 transition-transform duration-300" />
                   ) : (
-                    <FaChevronDown className="w-3 h-3 text-[#e7e9e5] transform hover:scale-110 transition-transform duration-300" />
+                    <FaChevronDown className="w-3 h-3 text-[#e7e9e5] transform hover:scale-150 transition-transform duration-300" />
                   )}
                 </button>
                 {openItem === index && (
@@ -76,7 +80,11 @@ function Faqs() {
             <img src={rocket} alt="Rocket on coins" className="max-w-full h-auto" />
           </div>
         </div>
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center relative ">
+          <img src={bitcoin} alt="" className="absolute hidden md:block bottom-10 left-60" />
+          <img src={circle1} alt="" className="absolute hidden md:block top-10 left-60" />
+          <img src={eth} alt="" className="absolute  hidden md:blocktop-10 right-60" />
+          <img src={cross} alt="" className="absolute  hidden md:blockbottom-10 right-60" />
         <div className="flex p-5 mt-5 lg:mt-20 items-center justify-center">
         <img src={wave} alt="" />
       </div>
@@ -84,7 +92,7 @@ function Faqs() {
             WE MAKE IT<br/> EASY TO <br/> <span className="text-[#d3a605]">DISCOVER</span>
           </h2>
           <p className="mb-6">Invest and manage all your NFTs at one place.</p>
-          <button className="bg-[#d3a605]  hover:bg-red-600 text-sm font-bold text-white py-4 px-4 rounded-full ">
+          <button className="bg-[#d3a605] transform hover:scale-110 transition-all duration-300  hover:bg-red-600 text-sm font-bold text-white py-4 px-4 rounded-full ">
             Join community
           </button>
         </div>

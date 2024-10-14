@@ -18,8 +18,8 @@ const prizes = [
 export default function Prizes() {
   return (
     <div className=" text-white relative py-16 px-4 sm:px-6 lg:px-8">
-         <div className="gradient z-[-1] right-[-30%]  absolute top-0 w-[900px] rounded-full blur-[220px] h-[900px]"></div>
-         <div className="gradient z-[-1] left-[20%]  absolute bottom-0 w-[500px] rounded-full blur-[220px] h-[500px]"></div>
+         <div className="gradient z-[-1] right-[-30%] hidden md:block  absolute top-0 w-[500px] rounded-full blur-[220px] h-[500px]"></div>
+         <div className="gradient z-[-1] left-[20%]  absolute bottom-60 w-[500px] rounded-full blur-[220px] h-[500px]"></div>
       <div className="max-w-7xl mx-auto ">
         <h2 className="text-4xl  md:text-6xl text-center font-bold mb-2">
           LUNA <span className="text-[#d3a605]  ">PRIZES</span>
@@ -40,9 +40,9 @@ export default function Prizes() {
           ))}
         </div>
         <div className="flex items-center justify-center py-4 mt-10"> <img src={wave} alt="" /></div>
-        <div className="bg-white/5 rounded-[40px] md:w-[80%] mx-auto p-4 flex flex-col gap-4 sm:flex-row items-center justify-between">
+        <div className="bg-white/5  rounded-[40px] md:w-[80%] mx-auto p-4 lg:pl-20 flex flex-col gap-4 sm:flex-row items-center justify-between">
           <div className="flex flex-col gap-5">
-          <div>
+          <div className=''>
             <h3 className="text-4xl md:text-6xl font-bold mb-2">NEVER <span className="text-[#d3a605]">MISS A DROP!</span></h3>
             <p className="text-gray-400 text-start mb-4 sm:mb-0">Subscribe to our super-rare and exclusive drops & collectibles.</p>
           </div>

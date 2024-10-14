@@ -26,10 +26,10 @@ export default function Nav() {
   };
 
   return (
-    <nav className=" w-full z-50 text-[16px] py-4 text-white transition-all duration-300 bg-transparent">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className=" w-full z-50  text-[16px] py-4 text-white transition-all duration-300 bg-transparent">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <div className="flex items-center justify-between ">
-          <div className=" cursor-pointer" onClick={scrollToTop}>
+          <div className=" cursor-pointer " onClick={scrollToTop}>
             <img src={logo} className='lg:w-30 w-[100px] ' alt="Ultrachand Crypto" />
           </div>
           <div className="hidden text-[16px] md:block">

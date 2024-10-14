@@ -4,12 +4,16 @@ import m1 from '../assets/m1.svg'; // Correct import for local SVG
 import m2 from '../assets/m2.svg'; // Correct import for local SVG
 import m3 from '../assets/m3.svg'; // Correct import for local SVG
 import m4 from '../assets/m4.svg'; // Correct import for local SVG
-import { FaWallet, FaShoppingCart, FaPaintBrush, FaListUl } from 'react-icons/fa';
+import cross from '../assets/cross.svg'; // Correct import for local SVG
+import orangec from '../assets/orangec.svg'; // Correct import for local SVG
+
 
 const Mint = () => {
     return (
         <div className="text-white relative p-4 md:p-8">
-            <div className="gradient z-[-1] right-[-30%]  absolute top-0 w-[900px] rounded-full blur-[220px] h-[900px]"></div>
+            <img src={cross} alt="" className='absolute bottom-40 left-20' />
+            <img src={orangec} alt="" className='absolute bottom-40 right-20' />
+            <div className="gradient z-[-1] right-[-30%]  hidden md:block absolute top-40 w-[500px] rounded-full blur-[220px] h-[500px]"></div>
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
                 {/* Left side: Wallet Image and Mint Now Section */}
                 <div className="flex flex-col p-5 flex-[.4] items-center lg:items-start gap-4">
@@ -28,17 +32,17 @@ const Mint = () => {
                         <p className="mb-6 text-center lg:text-left">
                             Use Trust Wallet, Metamask, or any wallet to connect to the app.
                         </p>
-                        <button className="bg-[#d3a605] lg:mx-10 text-white px-6 py-4 rounded-full font-semibold hover:bg-red-600 transition duration-300">
+                        <button className="bg-[#d3a605] transform hover:scale-105 transition-all duration-300  lg:mx-10 text-white px-6 py-4 rounded-full font-semibold hover:bg-red-600">
                             Mint Now
                         </button>
                     </div>
                 </div>
 
                 {/* Right side: Cards Section */}
-                <div className="grid-cols-1 hidden md:grid flex-[.6] sm:grid-cols-1 lg:grid-cols-2 gap-4 mt-12">
+                <div className="grid-cols-1 hidden md:grid flex-[.6] sm:grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
                     {/* Card 1: Connect Wallet */}
-                    <div className="flex flex-col gap-4">
-                        <div className=" bg-white/5 p-6 rounded-[20px]">
+                    <div className="flex flex-col  gap-4">
+                        <div className=" bg-white/5 p-6 transform hover:scale-105 transition-all duration-300  rounded-[20px]">
                             <div className="text-yellow-400 text-3xl mb-4">
                                 <img src={m4} alt="Connect Wallet" />
                             </div>
@@ -49,7 +53,7 @@ const Mint = () => {
                         </div>
 
                         {/* Card 2: Create Artwork */}
-                        <div className="bg-white/5 p-6 rounded-[20px]">
+                        <div className="bg-white/5 p-6 transform hover:scale-110 transition-all duration-300  rounded-[20px]">
                             <div className="text-yellow-400 text-3xl mb-4">
                                 <img src={m2} alt="Create Artwork" />
                             </div>
@@ -60,7 +64,7 @@ const Mint = () => {
                         </div>
                     </div>
                     <div className="flex flex-col md:mt-20 gap-4">
-                        <div className="bg-white/5 p-6 rounded-[20px]">
+                        <div className="bg-white/5 transform hover:scale-105 transition-all duration-300  p-6 rounded-[20px]">
                             <div className="text-yellow-400 text-3xl mb-4">
                                 <img src={m1} alt="Buy Your NFT" />
                             </div>
@@ -71,7 +75,7 @@ const Mint = () => {
                         </div>
 
                         {/* Card 4: List Them for Sale */}
-                        <div className="bg-white/5 p-6 rounded-[20px]">
+                        <div className="bg-white/5 transform hover:scale-105 transition-all duration-300  p-6 rounded-[20px]">
                             <div className="text-yellow-400 text-3xl mb-4">
                                 <img src={m3} alt="List Them for Sale" />
                             </div>

@@ -1,10 +1,12 @@
 import React from 'react';
 import wave from "../assets/vave.svg";
-import card from "../assets/100.mp4";
-import card2 from "../assets/500.mp4";
-import card3 from "../assets/1000.mp4";
-import card4 from "../assets/5000.mp4";
-import card5 from "../assets/10000.mp4";
+import card from "../assets/100.mov";
+import card2 from "../assets/500.mov";
+import card3 from "../assets/1000.mov";
+import card4 from "../assets/5000.mov";
+import card5 from "../assets/10000.mov";
+import bitcoin from "../assets/bitcoin.svg";
+import eth from "../assets/eth.svg";
 
 const collections = [
     { number: '100', video: card },
@@ -42,10 +44,12 @@ export default function Collections() {
                                     <div className=" flex justify-center items-center">
                                         {/* Video instead of image */}
                                         <video
+                                        
                                             src={collection.video}
                                             autoPlay
                                             loop
                                             muted
+                                            
                                             playsInline
                                             className=" h-[500px]"
                                             alt={`Luna Collection ${collection.number}`}
@@ -53,7 +57,7 @@ export default function Collections() {
                                     </div>
                                     
                                
-                                <button className="bg-[#d3a605] mx-auto px-6 py-4 rounded-full max-w-fit font-semibold hover:bg-red-600 transition-colors">
+                                <button className="bg-[#d3a605]  mx-auto px-6 py-4 rounded-full max-w-fit font-semibold hover:bg-red-600 duration-300 delay-100 transition-colors">
                                     Mint Now
                                 </button>
                             </div>
@@ -62,8 +66,10 @@ export default function Collections() {
                 </div>
 
                 {/* Wave Image */}
-                <div className="flex items-center justify-center py-4 mt-10 md:p-20">
+                <div className="flex items-center relative justify-center py-4 mt-10 md:p-20">
                     <img src={wave} alt="Wave" />
+                    <img src={eth} alt="" className="absolute bottom-10 right-60 w-6" />
+ 
                 </div>
 
                 {/* Stats Section */}
@@ -78,7 +84,9 @@ export default function Collections() {
 
                 {/* SVG Arrow */}
                 <div className="flex justify-center md:mt-10">
-                    <div className="flex items-center justify-center py-4 mt-10">
+                    <div className="flex items-center relative justify-center py-4 mt-10 lg:mt-20">
+             
+                    <img src={bitcoin} alt="" className="absolute top-0 w-8 right-80" />
                         <img src={wave} alt="Wave" />
                     </div>
                 </div>

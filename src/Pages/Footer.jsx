@@ -27,8 +27,8 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="font-bold mb-2">My Account</h3>
-            <ul className="space-y-2 text-lg    ">
+            <h3 className="font-semibold text-[20px] mb-2">My Account</h3>
+            <ul className="space-y-2 text-    ">
               <li>Profile</li>
               <li>Collections</li>
               <li>Favourites</li>
@@ -36,7 +36,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold mb-2">Marketplace</h3>
+            <h3 className="font-semibold text-[20px] mb-2">Marketplace</h3>
             <ul className="space-y-2 ">
               <li>Explore</li>
               <li>All NFT</li>
@@ -45,8 +45,8 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold mb-2">Resources</h3>
-            <ul className="space-y-2 text-lg    ">
+            <h3 className="font-semibold text-[20px] mb-2">Resources</h3>
+            <ul className="space-y-2 text-    ">
               <li>Help Center</li>
               <li>Partners</li>
               <li>Blog</li>
@@ -54,8 +54,8 @@ export default function Footer() {
             </ul>
           </div>
           <div className='' >
-            <h3 className="font-bold mb-2">Company</h3>
-            <ul className="space-y-2 text-lg    ">
+            <h3 className="font-semibold text-[20px] mb-2">Company</h3>
+            <ul className="space-y-2 text-    ">
               <li>About Us</li>
               <li>Careers</li>
               <li>Support</li>
