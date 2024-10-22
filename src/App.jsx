@@ -4,7 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Layout from './Layout';
 import Services from './Services/Services';
-import PrivacyPolicy from './Services/PrivacyPolicy';
+
+import Termsofservices from './Services/Termsofservices';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}  />
         <Route path="/services" element={<Services />}  />
-        <Route path="/Privacypolicy" element={<PrivacyPolicy />}  />
+        <Route path="Terms" element={<Termsofservices />}  />
       </Routes>
     </Layout>
   );

@@ -71,7 +71,7 @@ export default function Footer() {
       <div className="mt-8 py-8 px-8  w-full flex flex-col md:flex-row justify-between items-center">
           <p className=" mb-4 md:mb-0 text-center">2024© Copyright Lunalotto. All Rights Reserved</p>
           <div className="flex space-x-4 text-sm">
-            <Link href="#" to="kl" className="hover:underline text-center z-10">Terms Of Service</Link>
+            <Link href="#" to="Terms " className="hover:underline text-center z-10">Terms Of Service</Link>
             <Link href="#" to="Privacypolicy" className="hover:underline text-center z-10">Privacy Policy</Link>
           </div>
         </div>

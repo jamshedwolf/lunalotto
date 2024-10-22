@@ -1,8 +1,10 @@
 import React from 'react'
 
-function PrivacyPolicy() {
+function Termsofservices() {
     return (
-        <div className='px-10 py-10 pt-40'>
+        <div className='px-10 py-10 relative pt-40'>
+            <div className="absolute top-0 left-0 w-full h-full bgballs"></div>
+            <div className="absolute top-0 left-0 w-full h-full z-[-1] bg4"></div>
 
             <div className="max-w-7xl mx-auto flex flex-col gap-10">
                 <div className="text-6xl md:text-6xl jack">Terms of Service for LunaLotto & LunaCasino</div>
@@ -101,4 +103,4 @@ function PrivacyPolicy() {
     )
 }
 
-export default PrivacyPolicy
+export default Termsofservices
