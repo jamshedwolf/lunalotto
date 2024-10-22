@@ -1,34 +1,21 @@
-
-import React from 'react'
-import './App.css'
-import About from './Pages/About'
-import Faqs from './Pages/Faqs'
-import Footer from './Pages/Footer'
-import Hero from './Pages/Hero'
-import Mint from './Pages/Mint'
-import Nav from './Pages/Nav'
-import Prizes from './Pages/Prizes'
-import Roadmap from './Pages/Roadmap'
-import Collections from './Pages/Collection'
+import React from 'react';
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Layout from './Layout';
+import Services from './Services/Services';
+import PrivacyPolicy from './Services/PrivacyPolicy';
 
 function App() {
- 
-
   return (
-    <>
-<div className="overflow-x-hidden">
-    <Nav/>
-    <Hero/>
-    <Mint/>
-    <About/>
-    <Prizes/>
-    <Collections/>
-    <Roadmap/>
-    <Faqs/>
-      <Footer/>
-      </div>
-    </>
-  )
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />}  />
+        <Route path="/services" element={<Services />}  />
+        <Route path="/Privacypolicy" element={<PrivacyPolicy />}  />
+      </Routes>
+    </Layout>
+  );
 }
 
-export default App
+export default App;

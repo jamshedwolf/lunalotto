@@ -6,11 +6,14 @@ import f3 from "../assets/f3.svg"
 import f4 from "../assets/f4.svg"
 import f5 from "../assets/f5.svg"
 import logo from "../assets/logo.svg"
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="relative backdrop-blur-lg bg-white/5 text-white pt-8  ">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+    <footer className="relative bg5   text-white pt-8  ">
+      <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-1] bgballs"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 md:px-8 z-10">
         <div className="grid grid-cols-1 md:grid-cols-7  gap-8">
           <div className="col-span-1 text-lg mx- lg:mx-0 md:col-span-3">
             <img src={logo} alt="Lunachano Crypto Logo"  className="mb-4 lg:w-30 w-[100px] " />
@@ -65,11 +68,11 @@ export default function Footer() {
         </div>
         
       </div>
-      <div className="mt-8 py-8 backdrop-blur-[150px] px-8 border-green-800 w-full flex flex-col md:flex-row justify-between items-center">
+      <div className="mt-8 py-8 px-8  w-full flex flex-col md:flex-row justify-between items-center">
           <p className=" mb-4 md:mb-0 text-center">2024© Copyright Lunalotto. All Rights Reserved</p>
           <div className="flex space-x-4 text-sm">
-            <a href="#" className="hover:underline text-center">Terms Of Service</a>
-            <a href="#" className="hover:underline text-center">Privacy Policy</a>
+            <Link href="#" to="kl" className="hover:underline text-center z-10">Terms Of Service</Link>
+            <Link href="#" to="Privacypolicy" className="hover:underline text-center z-10">Privacy Policy</Link>
           </div>
         </div>
    

@@ -1,20 +1,13 @@
+import { useState } from 'react';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; 
 
-
-import { useState } from 'react'
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa' 
-import wave from "../assets/vave.svg";
-import rocket from "../assets/rocket.svg";
-import bitcoin from "../assets/bitcoin.svg";
-import eth from "../assets/eth.svg";
-import cross from "../assets/cross.svg";
-import circle1 from "../assets/circle2.svg";
+import WalletImage from '../assets/wallet.svg';
 
 const faqs = [
   {
     question: "What is Luna's NFT Collection?",
-    answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident. ",
-p2:"  fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident."
-
+    answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident.",
+    p2: "  fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident."
   },
   {
     question: "How we can buy and invest NFT?",
@@ -36,31 +29,33 @@ p2:"  fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident. Duis aut
     question: "What is your contract address?",
     answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }
-]
+];
 
 function Faqs() {
-  const [openItem, setOpenItem] = useState(0) // No item is open by default
+  const [openItem, setOpenItem] = useState(0); // No item is open by default
 
   const handleToggle = (index) => {
-    setOpenItem(openItem === index ? -1 : index) // Toggle logic
-  }
+    setOpenItem(openItem === index ? -1 : index); // Toggle logic
+  };
 
   return (
-    <div className="min-h-screen  text-white p-4 lg:p-8">
+    <div className="lg:h-screen xl:h-auto relative text-white p-4 overflow-hidden  lg:p-8">
+      <div className="absolute top-0 left-0 w-[100%] h-[100%] bgballs"></div>
+       <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-1] bg6"></div>
       <div className="max-w-6xl relative mx-auto">
-      <div className="gradient z-[-1] left-[-30%]  absolute hidden lg:block bottom-0 w-[900px] rounded-full blur-[220px] h-[900px]"></div>
-        <h1 className="text-4xl lg:text-6xl  font-bold text-center mb-12">
-          YOUR QUESTIONS <span className="text-[#d3a605]"><br/>ANSWERED!</span>
+        <div className="gradient z-[-1] left-[-60%] absolute hidden lg:block bottom-40 w-[900px] rounded-full blur-[220px] h-[900px]"></div>
+        <h1 className="text-6xl jack lg:text-6xl text-center mb-12">
+          YOUR QUESTIONS <span className="text-[#85CD4F]">ANSWERED!</span>
         </h1>
         <div className="flex flex-col text-[20px] lg:flex-row gap-8">
-          <div className="flex-[.7]  border   bg-white/5  border-[#393c39] p-5 rounded-[30px] shadow-lg">
+          <div className="flex-[.7] border bg-white/5 border-[#393c39] p-5 rounded-[30px] shadow-lg">
             {faqs.map((faq, index) => (
-              <div key={index} className="border-b-[1px] border-b-[#393c386c]  ">
+              <div key={index} className="border-b-[1px] border-b-[#393c386c]">
                 <button
                   className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
                   onClick={() => handleToggle(index)}
                 >
-                  <span className=" text-white">{faq.question}</span>
+                  <span className="text-white">{faq.question}</span>
                   {openItem === index ? (
                     <FaChevronUp className="w-3 h-3 text-[#e7e9e5] transform hover:scale-150 transition-transform duration-300" />
                   ) : (
@@ -77,29 +72,12 @@ function Faqs() {
             ))}
           </div>
           <div className="flex-1 flex justify-center items-center">
-            <img src={rocket} alt="Rocket on coins" className="max-w-full h-auto" />
+            <img src={WalletImage} alt="Rocket on coins" className="w-full h-auto" />
           </div>
         </div>
-        <div className="mt-16 text-center relative ">
-          <img src={bitcoin} alt="" className="absolute hidden md:block bottom-10 left-60" />
-          <img src={circle1} alt="" className="absolute hidden md:block top-10 left-60" />
-          <img src={eth} alt="" className="absolute  hidden md:blocktop-10 right-60" />
-          <img src={cross} alt="" className="absolute  hidden md:blockbottom-10 right-60" />
-        <div className="flex p-5 mt-5 lg:mt-20 items-center justify-center">
-        <img src={wave} alt="" />
-      </div>
-          <h2 className="text-4xl lg:text-6xl font-bold mb-4">
-            WE MAKE IT<br/> EASY TO <br/> <span className="text-[#d3a605]">DISCOVER</span>
-          </h2>
-          <p className="mb-6">Invest and manage all your NFTs at one place.</p>
-          <button className="bg-[#d3a605] transform hover:scale-110 transition-all duration-300  hover:bg-red-600 text-sm font-bold text-white py-4 px-4 rounded-full ">
-            Join community
-          </button>
-        </div>
-       
       </div>
     </div>
-  )
+  );
 }
 
 export default Faqs;

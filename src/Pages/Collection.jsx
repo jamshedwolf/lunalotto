@@ -17,47 +17,44 @@ const collections = [
 ];
 
 const stats = [
-    { value: '400+', label: 'Collections' },
-    { value: '200+', label: 'Artists' },
+    { value: '10000+', label: 'Collections' },
+    { value: '9000+', label: 'Artists' },
     { value: '1860+', label: 'Community members' },
     { value: '2.5x', label: 'Estimated value' },
 ];
 
 export default function Collections() {
     return (
-        <div id='collection' className=" text-white relative py-16 px-4 sm:px-6 lg:px-8">
-
-            <div className="max-w-7xl mx-auto">
-                <h2 className="text-4xl lg:text-6xl text-center font-bold mb-4">
-                    LUNA <span className="text-[#d3a605]">COLLECTIONS</span>
-                </h2>
-                <p className="text-gray-400 text-center mb-6">
-                    Multiple Chains, One Home. Stack up all your NFTs from <br /> across blockchains.
-                </p>
-
+        <div id='collection' className="text-white  relative py-16 px-4 sm:px-6 lg:px-8">
+            <div className="absolute top-0 left-0 w-[100%] h-[100%] bgballs"></div>
+              <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-5] bg5"></div>
+            <div className="max-w-7xl flex flex-col items-center justify-center gap-10 mx-auto">
+                <div className="">
+                    <h2 className="text-6xl jack lg:text-6xl text-center mb-4">
+                        LUNA <span className="text-[#85CD4F]">COLLECTIONS</span>
+                    </h2>
+                    <p className="text-gray-400 text-center mb-6">
+                        Multiple Chains, One Home. Stack up all your NFTs from across blockchains.
+                    </p>
+                </div>
                 {/* Collection Cards with Videos */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
                     {collections.map((collection, index) => (
                         <div key={index} className="rounded-lg overflow-hidden">
                             <div className="flex flex-col ">
-                               
-                                    <div className=" flex justify-center items-center">
-                                        {/* Video instead of image */}
-                                        <video
-                                        
-                                            src={collection.video}
-                                            autoPlay
-                                            loop
-                                            muted
-                                            
-                                            playsInline
-                                            className=" h-[500px]"
-                                            alt={`Luna Collection ${collection.number}`}
-                                        />
-                                    </div>
-                                    
-                               
-                                <button className="bg-[#d3a605]  mx-auto px-6 py-4 rounded-full max-w-fit font-semibold hover:bg-red-600 duration-300 delay-100 transition-colors">
+                                <div className="flex justify-center items-center">
+                                    {/* Video instead of image */}
+                                    <video
+                                        src={collection.video}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className="h-[500px]"
+                                        alt={`Luna Collection ${collection.number}`}
+                                    />
+                                </div>
+                                <button className="bg-[#85CD4F] mx-auto px-6 py-4 rounded-full max-w-fit font-semibold hover:bg-red-600 duration-300 delay-100 transition-colors">
                                     Mint Now
                                 </button>
                             </div>
@@ -66,30 +63,18 @@ export default function Collections() {
                 </div>
 
                 {/* Wave Image */}
-                <div className="flex items-center relative justify-center py-4 mt-10 md:p-20">
-                    <img src={wave} alt="Wave" />
-                    <img src={eth} alt="" className="absolute bottom-10 right-60 w-6" />
- 
-                </div>
 
                 {/* Stats Section */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 rounded-full bg-white/5 p-10 gap-8 mb-8">
                     {stats.map((stat, index) => (
                         <div key={index} className="text-center">
-                            <p className="text-4xl lg:text-6xl font-bold text-white mb-2">{stat.value}</p>
+                            <p className="text-6xl lg:text-6xl text-white jack mb-2">{stat.value}</p>
                             <p className="text-center mr-2 font-light text-gray-400">{stat.label}</p>
                         </div>
                     ))}
                 </div>
 
                 {/* SVG Arrow */}
-                <div className="flex justify-center md:mt-10">
-                    <div className="flex items-center relative justify-center py-4 mt-10 lg:mt-20">
-             
-                    <img src={bitcoin} alt="" className="absolute top-0 w-8 right-80" />
-                        <img src={wave} alt="Wave" />
-                    </div>
-                </div>
             </div>
         </div>
     );
