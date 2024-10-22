@@ -26,7 +26,9 @@ const stats = [
 export default function Collections() {
     return (
         <div id='collection' className="text-white  relative py-16 px-4 sm:px-6 lg:px-8">
-            <div className="absolute top-0 left-0 w-[100%] h-[100%] bgballs"></div>
+                <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-1] bgballs"></div>
+
+           
               <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-5] bg5"></div>
             <div className="max-w-7xl flex flex-col items-center justify-center gap-10 mx-auto">
                 <div className="">
@@ -76,6 +78,7 @@ export default function Collections() {
 
                 {/* SVG Arrow */}
             </div>
+          
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaArrowUp } from 'react-icons/fa'; // FontAwesome icon
 import circle from "../assets/circle1.svg";
-import card from "../assets/1.mp4";
+import card from "../assets/100.mp4";
 import wave from "../assets/vave.svg";
 
 export default function Hero() {

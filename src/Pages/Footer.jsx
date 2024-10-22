@@ -72,7 +72,7 @@ export default function Footer() {
           <p className=" mb-4 md:mb-0 text-center">2024© Copyright Lunalotto. All Rights Reserved</p>
           <div className="flex space-x-4 text-sm">
             <Link href="#" to="Terms " className="hover:underline text-center z-10">Terms Of Service</Link>
-            <Link href="#" to="Privacypolicy" className="hover:underline text-center z-10">Privacy Policy</Link>
+            <Link href="#" to="Terms " className="hover:underline text-center z-10">Privacy Policy</Link>
           </div>
         </div>
    
