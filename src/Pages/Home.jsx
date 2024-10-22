@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from "./Hero"
 import Mint from "./Mint"
-import About from "../Pages/About"
+
 import Roadmap from './Roadmap'
 import Collection from './Collection'
 import Faqs from './Faqs'
