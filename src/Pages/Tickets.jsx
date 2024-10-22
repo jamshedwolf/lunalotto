@@ -1,5 +1,5 @@
 import React from 'react';
-import card from '../assets/ticket.svg'; // Adjust the import path for the card image
+import card from '../assets/ticket.mp4'; // Adjust the import path for the card image
 
 function Tickets() {
     return (
@@ -17,7 +17,7 @@ function Tickets() {
                 </div>
                 <div className="flex md:flex-row w-[70%] items-center mx-auto   flex-col gap-6">
                     <div className=" flex-[.5] flex items-center justify-center">
-                        <img src={card} alt="card" />
+                        <video src={card} alt="card" muted loop autoPlay />
                     </div>
                     <div className="md:text-start text-white flex-[.5] text-center space-y-8">
                         <h1 className="text-wrap text-6xl md:text-6xl jack uppercase">

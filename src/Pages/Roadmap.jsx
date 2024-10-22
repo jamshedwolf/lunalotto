@@ -1,8 +1,8 @@
 import React from 'react';
 import bag from "../assets/bag.svg";
-import meta from "../assets/meta.svg";
-import coin from "../assets/coinbase.svg";
-import x from "../assets/x.svg";
+import meta from "../assets/fire.svg";
+import coin from "../assets/sol.svg";
+import x from "../assets/phantom.svg";
 import trust from "../assets/trust.svg";
 import bit from "../assets/bit.svg";
 
@@ -38,7 +38,7 @@ const logos = [meta, bit, coin, trust, x];
 export default function Roadmap() {
   return (
     <div id='roadmap' className="relative min-h-screen flex flex-col  items-center justify-center text-white p-4 lg:p-8">
-      <div className="absolute top-0 left-0 w-[100%] h-[100%] bgballs"></div>
+      <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-5] bgballs"></div>
         <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-5] bg4"></div>
       <div className="gradient z-[-1] right-1/3 absolute top-[20%] w-[700px] rounded-full blur-[420px] h-[700px]"></div>
       <h1 className="text-6xl jack lg:text-6xl text-center mb-12">

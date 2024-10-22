@@ -30,7 +30,7 @@ export default function Hero() {
                 <p className="text-[18px] text-[#B7B4BB] mb-3">Players can share in the success of the platform by owning LunaFounder NFTs</p>
               </div>
               <p className="text-4xl jack uppercase lg:text-5xl">
-                5,366 / 5555 <span className="text-[#85CD4F]">Minted</span>
+                5,366 / 13850 <span className="text-[#85CD4F]">Minted</span>
               </p>
 
               <div className="flex gap-4 mb-8">
@@ -41,20 +41,7 @@ export default function Hero() {
                   Whitelist Now
                 </button>
               </div>
-              <div className="flex justify-between lg:w-2/3 items-center mb-8">
-                <div className="">
-                  <p className="text-3xl lg:text-6xl jack">2k+</p>
-                  <p className="text-sm font-light text-gray-400">Collection Items</p>
-                </div>
-                <div className="">
-                  <p className="text-3xl lg:text-6xl jack">0.55</p>
-                  <p className="text-sm font-light text-gray-400">Floor Price (SOL)</p>
-                </div>
-                <div className="">
-                  <p className="text-3xl lg:text-6xl jack">2.5x</p>
-                  <p className="text-sm font-light text-gray-400">Estimated Value</p>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
