@@ -17,12 +17,12 @@ export default function Nav() {
     { name: 'HOME', type: 'router', to: '/' }, // Navigates to index page
     { name: 'COLLECTION', type: 'scroll', to: 'roadmap' }, // Scrolls to roadmap section
     { name: 'SERVICES', type: 'router', to: '/services' }, // Navigates to services page
-    { name: 'ABOUT US', type: 'scroll', to: 'about' }, // Scrolls to about section
+    { name: 'ABOUT US', type: 'router', to: '/about' }, // Scrolls to about section
     { name: 'ROAD MAP', type: 'scroll', to: 'roadmap' }, // Scrolls to roadmap section
   ];
 
   return (
-    <nav className="w-full absolute top-0 left-0 right-0 z-50 text-[16px] py-4 text-white transition-all duration-300 bg-transparent  bg-[#052035] md:bg-transparent">
+    <nav className="w-full absolute top-0 left-0 right-0 z-50 text-[16px] py-4 text-white transition-all duration-300 bg-transparent  bg-[#052035]  md:bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <div className="flex items-center justify-between">
           <div className="cursor-pointer">
@@ -57,9 +57,11 @@ export default function Nav() {
             <button className="bg-[#86C248] hover:bg-red-600 transition-all hover:scale-105 duration-300 text-white font-bold py-2 px-4 rounded-full">
               Connect Wallet
             </button>
-            <FaFacebookF className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" />
-            <FaTwitter className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" />
-            <FaTelegramPlane className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" />
+           <div className="p-1 rounded-lg shadow-lg border border-gray-600 bg-white/5"> <FaFacebookF className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" /></div>
+           <div className="p-1 rounded-lg shadow-lg border border-gray-600 bg-white/5"> <FaTwitter className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" /></div>
+           <div className="p-1 rounded-lg shadow-lg border border-gray-600 bg-white/5"><FaTelegramPlane className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" /></div>
+           
+            
           </div>
           <div className="md:hidden">
             <button
@@ -73,7 +75,7 @@ export default function Nav() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden ">
+        <div className="md:hidden py-5  bg-[#052035] rounded-lg ">
           <div className="px-2 pt-2 pb-3 jack flex flex-col items-center justify-center space-y-1 sm:px-3">
             {navItems.map((item) =>
               item.type === 'router' ? (
@@ -102,9 +104,9 @@ export default function Nav() {
               Connect Wallet
             </button>
             <div className="flex space-x-4 mt-4">
-              <FaFacebookF className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" />
-              <FaTwitter className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" />
-              <FaTelegramPlane className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" />
+            <div className="p-1 rounded-lg shadow-lg border border-gray-600 bg-white/5"> <FaFacebookF className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" /></div>
+           <div className="p-1 rounded-lg shadow-lg border border-gray-600 bg-white/5"> <FaTwitter className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" /></div>
+           <div className="p-1 rounded-lg shadow-lg border border-gray-600 bg-white/5"><FaTelegramPlane className="w-6 h-6 hover:scale-110 transition-transform duration-300 cursor-pointer" /></div>
             </div>
           </div>
         </div>

@@ -15,12 +15,14 @@ const prizes = [
 ];
 
 export default function Prizes() {
+  // State variable to determine if there are any winners
+  const winners = []; // Assuming this array is fetched or defined elsewhere
+
   return (
-    <div className="text-white relative py-16 px-4  sm:px-6 lg:px-8">
+    <div className="text-white relative py-16 px-4 sm:px-6 lg:px-8">
       <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-1] bgballs"></div>
-       <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-1] bg4"></div>
-      {/* <div className="gradient z-[-1] right-[-30%] hidden md:block absolute top-0 w-[500px] rounded-full blur-[220px] h-[500px]"></div>
-      <div className="gradient z-[-1] left-[20%] absolute bottom-60 w-[300px] rounded-full blur-[120px] h-[300px]"></div> */}
+      <div className="absolute top-0 left-0 w-[100%] h-[100%] z-[-1] bg4"></div>
+
       <div className="max-w-7xl mx-auto">
         <h2 className="text-6xl text-white jack md:text-6xl text-center mb-2">
           LUNA <span className="text-[#85CD4F]">PRIZES</span>
@@ -36,7 +38,7 @@ export default function Prizes() {
               <h3 className="text-lg font-semibold mb-2">{prize.title}</h3>
               <p className="text-sm text-gray-400 mb-4 flex-grow">{prize.description}</p>
               <button className="bg-[#85CD4F] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-600 transition duration-300">
-                Claim Now
+                Comming Soon
               </button>
             </div>
           ))}
@@ -62,19 +64,25 @@ export default function Prizes() {
                 <div className="w-1/6 p-3">Prize</div>
               </div>
 
-              {/* Table Rows */}
-              {[...Array(4)].map((_, index) => (
-                <div key={index} className="flex bg-white/5">
-                  <div className="w-1/6 flex  items-center p-3 space-x-3">
-                    <img src={avatar} alt={`Avatar of Winner ${index + 1}`} className="w-8 h-8 rounded-full" />
-                  </div>
-                  <div className="w-1/6 p-3">0x1234...abcd</div>
-                  <div className="w-1/6 p-3">0xTransactionID</div>
-                  <div className="w-1/6 p-3">2024-10-19</div>
-                  <div className="w-1/6 p-3">14:35:21</div>
-                  <div className="w-1/6 p-3">5 BTC</div>
+              {/* Conditional Rendering */}
+              {winners.length === 0 ? (
+                <div className="flex justify-center items-center p-4 bg-white/5 text-gray-400">
+                  No winners yet
                 </div>
-              ))}
+              ) : (
+                winners.map((winner, index) => (
+                  <div key={index} className="flex bg-white/5">
+                    <div className="w-1/6 flex items-center p-3 space-x-3">
+                      <img src={avatar} alt={`Avatar of Winner ${index + 1}`} className="w-8 h-8 rounded-full" />
+                    </div>
+                    <div className="w-1/6 p-3">{winner.walletAddress}</div>
+                    <div className="w-1/6 p-3">{winner.transactionId}</div>
+                    <div className="w-1/6 p-3">{winner.date}</div>
+                    <div className="w-1/6 p-3">{winner.time}</div>
+                    <div className="w-1/6 p-3">{winner.prize}</div>
+                  </div>
+                ))
+              )}
             </div>
           </div>
         </div>

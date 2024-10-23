@@ -5,29 +5,32 @@ import WalletImage from '../assets/wallet.svg';
 
 const faqs = [
   {
-    question: "What is Luna's NFT Collection?",
-    answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident.",
-    p2: "  fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat proident."
+    question: "What is LunaLotto, and how does it work?",
+    answer: "*LunaLotto* is a blockchain-based lottery where each purchased ticket is minted as an NFT and secured in your wallet. Every participant has an equal chance to win fantastic prizes, and all draws are transparent and verifiable on the blockchain."
   },
   {
-    question: "How we can buy and invest NFT?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    question: "How can I play at LunaCasino?",
+    answer: "After registering, you can play with cryptocurrencies at *LunaCasino*. Our casino offers classic games like slots, blackjack, roulette, and more. All transactions and games are secured and transparent, thanks to blockchain technology."
   },
   {
-    question: "Why we should choose Luna's NFT?",
-    answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    question: "When do LunaLotto and LunaCasino launch?",
+    answer: "*LunaLotto* launches on *December 1, 2024*, while *LunaCasino* will go live in *June 2025*. You can look forward to exciting games and exclusive chances to win!"
   },
   {
-    question: "Where we can buy and sell NFTs?",
-    answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    question: "What are LunaFounder NFTs, and what are the benefits?",
+    answer: "The *LunaFounder NFTs* offer exclusive benefits such as monthly revenue distributions from casino profits and automatic participation in special lotteries. The sale starts on *December 1, 2024*, so don’t miss your chance!"
   },
   {
-    question: "How secure is this token?",
-    answer: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    question: "How do I participate in the lottery?",
+    answer: "You can easily buy a ticket through the *LunaLotto* system. Each ticket is minted as an NFT and stored in your wallet. Prizes are transparently recorded on the blockchain, and winnings can be withdrawn in cryptocurrency."
   },
   {
-    question: "What is your contract address?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    question: "Which cryptocurrencies are accepted?",
+    answer: "At launch, we will accept *USDC* and *USDT* on the *Solana blockchain*. More cryptocurrencies may be added later to provide users with more flexibility."
+  },
+  {
+    question: "Is there an affiliate program?",
+    answer: "Yes! Both *LunaLotto* and *LunaCasino* offer a generous *Affiliate Program*. You can earn commissions over 10 levels with LunaLotto and over 5 levels with LunaCasino, based on the purchases and losses of the players you refer."
   }
 ];
 

@@ -46,9 +46,9 @@ const Mint = () => {
                             <div className="text-[#85CD4F] text-3xl mb-4">
                                 <img src={m1} alt="Connect Wallet" />
                             </div>
-                            <h3 className="text-xl py-4 font-semibold mb-2">CONNECT WALLET</h3>
+                            <h3 className="text-xl py-4 font-semibold uppercase mb-2">Download and install phantom wallet</h3>
                             <p className="text-gray-400">
-                                Use Trust Wallet, Metamask, or any wallet to connect to the app.
+                               Before minting nfts you need to install phantom wallet and load some usdc or usdt. <a href="https://phantom.app/" className="text-blue-500 hover:underline">phantom wallet</a>
                             </p>
                         </div>
 
@@ -68,9 +68,9 @@ const Mint = () => {
                             <div className="text-[#85CD4F] text-3xl mb-4">
                                 <img src={m2} alt="Buy Your NFT" />
                             </div>
-                            <h3 className="text-xl py-4 font-semibold mb-2">BUY YOUR NFT</h3>
-                            <p className="text-gray-400">
-                                Select the NFT you want to buy and complete the transaction.
+                            <h3 className="text-xl py-4 font-semibold mb-2">CHOOSE YOUR NFT</h3>
+                            <p className="text-gray-400 lowercase">
+                            CHOOSE YOUR LUNA FOUNDER NFT THERE are various NFTs.you can choose from luna founder 100 to 1000.
                             </p>
                         </div>
 

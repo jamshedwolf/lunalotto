@@ -33,7 +33,7 @@ function Tickets() {
                             wallet, making participation immutable and secure.
                         </p>
                         <h1>
-                            Ticket Price:<span>{/* Insert ticket price here */}</span>
+                            Ticket Price:<span className='px-5 text-[#85CD4F]'>$5</span>
                         </h1>
                         <button className="w-40 border  hover:bg-red-600 transition-all hover:scale-110 duration-200 hover:text-white border-white py-3 px-2 rounded-full text-[#85CD4F]">
                             Buy Ticket Now &#8594;

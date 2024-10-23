@@ -60,7 +60,7 @@ export default function Roadmap() {
       </div>
 
       <div className="flex flex-col items-center lg:mt-20 gap-5">
-        <p className="text-center text-gray-500">POWERED BY AMAZING INVESTORS:</p>
+        <p className="text-center text-gray-500">POWERED BY AMAZING PARTNERS</p>
         <div className="flex flex-wrap justify-center items-center mt-10">
           {logos.map((logo, index) => (
             <img key={index} src={logo} alt={`logo-${index}`} className="h-16 lg:h-[100px] transform hover:scale-110 delay-100 transition-transform duration-300 mx-2" />
